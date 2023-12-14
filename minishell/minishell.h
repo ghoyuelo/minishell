@@ -13,12 +13,17 @@
 #ifndef MINISHELL_H
 # define MINISHELL_H
 
+#include <stdio.h> //printf,
+#include <stdlib.h> //exit,
+
 typedef struct s_data
 {
     char    *mini_env;
 }   t_data;
 
-/*******PARSE********/
+/******* PARSE_QUOTES ********/
 int	closed_quotes(char *str);
+
+/******* PARSE PIPES *******/
 
 #endif
